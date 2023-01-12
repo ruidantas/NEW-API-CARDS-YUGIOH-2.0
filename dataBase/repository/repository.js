@@ -7,7 +7,7 @@ export class repository {
 
   async update(cartas) {
     return await cardsYugioh.findOneAndUpdate({ id: cartas.id }, cartas, {
-      new: true,
+      new: true
     });
   }
 
