@@ -1,5 +1,7 @@
-import dotenv from "dotenv";
-dotenv.config();
+import {config} from "dotenv"; 
+ if(process.env.NOD_ENV !== "production"){
+    config();
+}
 import express, { Router } from "express";
 import cors from "cors";
 
