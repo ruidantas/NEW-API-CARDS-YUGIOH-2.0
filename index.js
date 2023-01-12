@@ -12,7 +12,7 @@ import { makeUpdate } from "./factories/updateFactories.js";
 
 mongoDb.connection();
 
-const port =  6666;
+const port =  process.env.PORT || 6666;
 const app = express();
 const router = Router();
 
