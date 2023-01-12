@@ -6,8 +6,8 @@ export class updateService{
         this.idService = idService;
     }
 
-    async excute(elemento, id){
-        const updateId = await this.idService.excute(id)
+    async execute(elemento, id){
+        const updateId = await this.idService.execute(id)
         const updateElemento = Object.assign(updateId, elemento)
         const elementValidate = new card(updateElemento)
         elementValidate.validate()
